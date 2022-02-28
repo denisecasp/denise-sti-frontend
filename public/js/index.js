@@ -1,3 +1,5 @@
+// age();
+
 let user = sessionStorage.getItem("user")
 console.log(user)
 if(user==null){
@@ -10,6 +12,7 @@ if(user==null){
         let aHeader = document.createElement("user")
     }
 }
+
 
 const UPDATE_FIRST = 0;
 const UPDATE_INTERVAL = 5000;
