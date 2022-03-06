@@ -1,5 +1,3 @@
-// age();
-
 let user = sessionStorage.getItem("user")
 console.log(user)
 if(user==null){
@@ -23,7 +21,7 @@ function age(){
     var xhr = new XMLHttpRequest()
     
     score = 2000
-    //xhr.open("GET", "http://localhost:3001/football")
+    
     xhr.open("GET", "/js/data.json")
     xhr.onload = function(){
         let data = JSON.parse(this.response)
@@ -39,7 +37,7 @@ function createTable(data){
 
     let aHeader = document.createElement("h1")
     aHeader.id = "user"
-    aHeader.innerHTML = "Welcome " + user + "!"
+    aHeader.innerHTML = "Allsvenskan 2022"
     appElement.appendChild(aHeader)
 
     let aTable = document.createElement("table")
